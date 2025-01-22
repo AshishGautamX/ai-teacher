@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Teacher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>AI Teacher</h1>
+        <nav>
+            <ul>
+                <li><a href="#syllabus">Syllabus</a></li>
+                <li><a href="#evaluation">Task Evaluation</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="syllabus">
+            <h2>Syllabus-Based Personalization</h2>
+            <div class="dark-card">
+                <p>Enter your class or stream to receive tailored tasks and resources.</p>
+                <div class="form-group">
+                    <label for="stream">Select Stream:</label>
+                    <select id="stream">
+                        <option value="cse">Computer Science</option>
+                        <option value="ece">Electronics</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button onclick="personalizeContent()">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="evaluation">
+            <h2>AI-Powered Task Evaluation</h2>
+            <div class="dark-card">
+                <ul>
+                    <li>Automated grading for digital and handwritten submissions.</li>
+                    <li>Handwriting recognition for inclusivity.</li>
+                    <li>Supports APIs like GPT and Gemini.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="progress">
+            <h2>Progress Tracking</h2>
+            <div class="dark-card">
+                <p>Track your hours and learning progress to achieve better results.</p>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Video Lecture Recommendations</h2>
+            <div class="dark-card">
+                <p>Get curated links to relevant lectures and resources based on your syllabus.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Teacher. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
