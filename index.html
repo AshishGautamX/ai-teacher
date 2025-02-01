@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Teacher - Signup</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
         
 <body>
     <div class="container">
         <div class="logo-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/2503/2503508.png" alt="AI Teacher Logo" class="logo">
-            <div class="site-name">AI Teacher</div>
+            <img src="Swayam.png" alt="AI Teacher Logo" class="logo">
         </div>
-
-        <h1>Sign Up</h1>
         <form id="signup-form">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-
-            <input type="text" id="state" name="state" placeholder="State" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
 
             <div class="role">
                 <label>
@@ -31,8 +23,24 @@
                     <input type="radio" name="role" value="student" required> Student
                 </label>
             </div>
-
-            <button type="submit">Sign Up</button>
+        
+            <div id="student-form" class="stform">
+                <input type="text" placeholder="Name" required>
+                <input type="number" placeholder="Class" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="State" required>
+                <input type="text" placeholder="City" required>
+              </div>
+        
+              <div id="teacher-form" class="stform"style="display: none;">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="School" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="State" required>
+                <input type="text" placeholder="City" required>
+              </div>
         </form>
 
         <div class="separator">
@@ -45,7 +53,8 @@
         </button>
     </div>
 
-    <script src="signup.js">
+    <script src="script.js">
         
     </script>
 </body>
+</html>
