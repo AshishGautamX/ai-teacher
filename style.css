@@ -12,51 +12,61 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .container {
     background-color: rgb(154, 203, 208);
-    width: 400px;
-    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
     border-radius: 10px;
+    margin-top: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#signup-form {
+    margin-top: 20px;
+    height: 388.333px;
+}
+
+#student-form {
+    height: 280px;
+}
+
+.stform {
+    display: block;
+    height: 310px;
 }
 
 .logo-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.site-name {
-    color: rgb(41, 115, 178);
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.container h1 {
-    text-align: center;
-    color: rgb(41, 115, 178);
-    margin-bottom: 20px;
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 label {
     margin: 10px 0 5px;
+    padding: 10px 15px;
 }
 
 input, select, button {
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(72, 166, 167);
@@ -70,17 +80,58 @@ input:focus, select:focus {
 
 .role {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 15px;
+    color: rgb(61,61,61);
+    gap: 15px;
+}
+
+.role label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgb(242, 239, 231);
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.role label:hover {
+    background: rgb(200, 225, 225);
 }
 
 .role input {
-    margin-right: 5px;
+    appearance: none;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(72, 166, 167);
+    border-radius: 50%;
+    position:relative;
+    margin-top: 3vh;
+    
+
+}
+
+.role input:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgb(72, 166, 167);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .google-signin {
     background-color: rgb(41, 115, 178);
     color: white;
+    width: 100%;
     border: none;
     display: flex;
     justify-content: center;
@@ -88,15 +139,12 @@ input:focus, select:focus {
     gap: 10px;
     cursor: pointer;
     position: relative;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 .google-signin:hover {
     background-color: rgb(72, 166, 167);
-}
-
-.google-signin img {
-    width: 20px;
-    height: 20px;
 }
 
 button {
@@ -104,6 +152,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -127,6 +177,13 @@ button:hover {
     height: 1px;
     background-color: rgb(72, 166, 167);
     vertical-align: middle;
+}
+
+#student-form, #teacher-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #google-role-selection {
