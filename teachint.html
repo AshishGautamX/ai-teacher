@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Teaching Assistant - Teacher Dashboard</title>
+    <link rel="stylesheet" href="teachint.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Teacher</h1>
+        <button id="createClassBtn" class="btn">Create a Class</button>
+        <div id="classForm" class="hidden">
+            <input type="text" id="className" placeholder="Enter Class Name">
+            <button id="generateLinkBtn" class="btn">Generate Class Link</button>
+        </div>
+        <div id="classLinkContainer" class="hidden">
+            <p>Class Link: <span id="classLink"></span></p>
+        </div>
+    </div>
+    <script src="teachint.js"></script>
+</body>
+</html>
